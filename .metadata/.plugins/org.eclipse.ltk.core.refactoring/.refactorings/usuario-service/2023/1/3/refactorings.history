@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.usuario.service.configuracion.RestTemplate.java&apos; to &apos;RestTemplateConfig.java&apos;&#x0D;&#x0A;- Original project: &apos;usuario-service&apos;&#x0D;&#x0A;- Original element: &apos;com.usuario.service.configuracion.RestTemplate.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.usuario.service.configuracion.RestTemplateConfig.java&apos;" description="Rename compilation unit &apos;RestTemplate.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.usuario.service.configuracion{RestTemplate.java" name="RestTemplateConfig.java" references="false" stamp="1673906264794" version="1.0"/>
+</session>

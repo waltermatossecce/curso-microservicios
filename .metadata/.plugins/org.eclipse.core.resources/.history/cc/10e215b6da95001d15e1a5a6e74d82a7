@@ -1,0 +1,17 @@
+package com.moto.service.entidades;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Entity(name = "Moto")
+@Table(name = "MOTO")
+@Data
+public class Moto {
+
+	private int id;
+	private String marca;
+	private String modelo;
+	private int usuarioId;
+}

@@ -1,0 +1,17 @@
+package com.carro.service.entidades;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Entity(name = "Carro")
+@Table(name = "CARRO")
+@Data
+public class Carro {
+
+	private int id;
+	private String marca;
+	private String modelo;
+	private int usuarioId;
+}

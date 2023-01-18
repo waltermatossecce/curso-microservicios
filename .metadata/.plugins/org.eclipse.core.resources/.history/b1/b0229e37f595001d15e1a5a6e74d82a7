@@ -1,0 +1,30 @@
+package com.usuario.service.servicios;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.usuario.service.entidades.Usuario;
+import com.usuario.service.repositorio.UsuarioRepository;
+
+@Service
+public class UsuarioService {
+
+	@Autowired
+	private UsuarioRepository usuarioRepository;
+	//GET LISTA DE USUARIO
+	public List<Usuario>getAll(){
+		return usuarioRepository.findAll();
+	}
+	//GET O PUTH PARA BUSCAR EL ID USUARIO
+	//Si es que no ha podido encontrado el usuario es nulo 
+	public Usuario getUsuarioById(int id) {
+		return usuarioRepository.findById(id).orElse(null);
+	}
+	//Para guardar el usuario con el http post 
+	public Usuario save(Usuario usuario) {
+		Usuario nuevoUsuario =usuarioRepository.save(usuario);
+		return nuevoUsuario;
+	}
+}

@@ -1,0 +1,10 @@
+package com.carro.service.controladores;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/carro")
+public class CarroController {
+
+}
